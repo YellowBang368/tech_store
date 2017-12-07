@@ -2,19 +2,84 @@
   <head>
     <title>Starter Project</title>
 
-    <!-- Normalize HTML5 Reset -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
-
-    <!-- styles.css Link -->
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Responsive Shizz -->
+    <link rel="stylesheet" href="css/resources.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0">
   </head>
 
   <body>
+  <div class="banner">
+    <div class="wrapper">
+      <h1>Server-part<br>Серверное оборудование</h1>
+    </div>
+  </div>
 
-    <!-- global.js Link -->
-    <script src="js/global.js"></script>
+  <div class="nav">
+    <div class="wrapper">
+      <a href="#">О компании</a>
+      <a href="#">Гарантия</a>
+      <a href="#">Контакты</a>
+      <label for="search">Search</label>
+      <input type="search" id="search" placeholder="Поиск" />
+    </div>
+  </div>
+
+  <div class="resources-wrapper">
+    <div class="resources">
+      <li class="col-6">
+        <img src="images/02.jpg">
+        <div class="resource-info">
+          <h2>Процессоры</h2>
+          <a href="#" class="button">Посмотреть</a>
+          <p class="price">От 2000 руб.</p>
+        </div>
+      </li>
+      <li class="col-3">
+        <img src="images/05.jpg">
+        <div class="resource-info">
+          <h2>Блоки резервного питания</h2>
+          <a href="#" class="button">Посмотреть</a>
+          <p class="price">От 6700</p>
+        </div>
+      </li>
+      <li class="col-3">
+        <img src="images/03.jpg">
+        <div class="resource-info">
+          <h2>Жесткие диски</h2>
+          <a href="#" class="button">Посмотреть</a>
+          <p class="price">От 2000</p>
+        </div>
+      </li>
+    </div>
+    <div class="resources buffer-top">
+      <li class="col-3">
+        <img src="images/04.jpg">
+        <div class="resource-info">
+          <h2>Сервера</h2>
+          <a href="#" class="button">Посмотреть</a>
+          <p class="price">От 16000</p>
+        </div>
+      </li>
+      <li class="col-3">
+        <img src="images/06.jpg">
+        <div class="resource-info">
+          <h2>Модули памяти</h2>
+          <a href="#" class="button">Посмотреть</a>
+          <p class="price">От 1000</p>
+        </div>
+      </li>
+      <li class="col-6">
+        <img src="images/01.jpg">
+        <div class="resource-info">
+          <h2>Материнские платы</h2>
+          <a href="#" class="button">Посмотреть</a>
+          <p class="price">От 2000 руб.</p>
+        </div>
+      </li>
+    </div>
+  </div>
   </body>
 </html>

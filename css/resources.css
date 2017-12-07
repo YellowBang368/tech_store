@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.resources-wrapper {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.resources {
+  height: 400px;
+  padding: 25px 0;
+  list-style: none;
+  width: 1500px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.resources li {
+  list-style: none;
+  width: 25%;
+  float: left;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s, opacity 0.1s 0.4s;
+}
+
+.resources li:hover .resource-info {
+  opacity: 0.9;
+  transform: translateY(0px);
+  transition: transform 0.4s, opacity 0.1s
+}
+
+.resources li img {
+  margin-top: 50px;
+  height: 300px;
+  list-style: none;
+  width: 100%;
+  max-width: 100%;
+}
+
+.resource-info {
+  background: #ffffff;
+  padding: 2em 10%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.resource-info h2 {
+  font-size: 1.5em;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+
+}
+
+.resource-info .button {
+  margin-top: 50px;
+  border: 2px solid #31323d;
+  padding: 1em 1.5em;
+  border-radius: 0.5em;
+  color: #31323d;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.resource-info .button:hover {
+  border: 2px solid #5a5b72;
+  color: #5a5b72;
+}
+
+.resource-info .price {
+  display: inline;
+  font-weight: 700;
+  color: #31323d;
+  padding-left: 1.5em;
+}
+
+
+.resources .col-6 {
+  float: left;
+  width: 50%;
+}
+
+.resources .col-3 {
+  float: left;
+  width: 25%;
+}
+
+@media only screen and (max-width: 1250px) {
+  .resources .col-3 {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .resources .col-3 {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .resources .col-3 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .resources .col-6 {
+    width: 100%;
+  }
+}
